@@ -6,7 +6,9 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
-
+<context:annotation-config>
+    <!--добавляет бины постпроцесооры-->
+</context:annotation-config>
     <bean class="quoters.InjectRandomIntAnnotationBeanPostProcessor"/>
     <!--айди данному бину не надо указывать, так как это инфраструктурный бин-->
     <bean class="quoters.TerminatorQuoter" id="terminatorQuoter">
