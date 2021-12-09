@@ -24,7 +24,7 @@ public class TerminatorQuoter implements Quoter {
 
    //@PostConstruct - не можем поставить потому что ее обрабатывает BeanPostProcessor,
     // а в нем еще нет переменной repeat
-
+@PostConstruct
     public void init(){
         //переменная repeat создается спрингом, поэтому можем ее вызвать в инит методе
         System.out.println(repeat);

@@ -35,6 +35,8 @@ public class InjectRandomIntAnnotationBeanPostProcessor implements BeanPostProce
 
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
+        System.out.println("Пострпроцессор в аннтотации рандом отработал");
+        //PostProcessor который что-то меняют в классе должны делать в постпроцессоре
         return bean;
     }
 }
