@@ -9,7 +9,7 @@
 <context:annotation-config/>
     <!--добавляет бины постпроцесооры, что бы спринг прочитал аннтоатции-->
 
-
+    <bean class="quoters.PostProxyInvokerProxyListener"/>
     <bean class="quoters.ProfilingHandlerBeanPostProcessor"/>
     <bean class="quoters.InjectRandomIntAnnotationBeanPostProcessor"/>
     <!--айди данному бину не надо указывать, так как это инфраструктурный бин-->
