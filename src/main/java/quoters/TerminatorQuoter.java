@@ -32,7 +32,10 @@ public class TerminatorQuoter implements Quoter {
     }
 
     @Override
+    @PostProxy
+    //Данная аннотация должна запуститься когда весь спринг уже настроен, методы все сгенерировались
     public void SayQuote() {
+        System.out.println("Phase3");
         System.out.println(repeat);
         for (int i = 0; i < repeat; i++) {
             System.out.println("message" + message);
